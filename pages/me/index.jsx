@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 
 
-export default function index() {
+export default function Home() {
   const { t } = useTranslation("common");
   return (
     <div>
