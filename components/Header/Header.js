@@ -4,6 +4,7 @@ import HeaderTopbar from '../HeaderTopbar/HeaderTopbar'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
 
+
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
     const SubmitHandler = (e) => {
@@ -33,7 +34,7 @@ const Header = (props) => {
                                 </div>
                             </div>
                             <div className="col-lg-7 col-md-1 col-1">
-                                <div id="navbar" className="collapse navbar-collapse navigation-holder">
+                                <div id="navbar" className=" navbar-collapse navigation-holder">
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
@@ -122,6 +123,9 @@ const Header = (props) => {
                                     </div>
 
                                     <div className="close-form">
+                               
+
+
                                         <Link onClick={ClickHandler} href="/contact" className="theme-btn">GET FREE QUOTE</Link>
                                     </div>
                                 </div>
