@@ -5,6 +5,7 @@ import '../styles/flaticon.css'
 import "../styles/font-awesome.min.css";
 import "../styles/themify-icons.css";
 import '../styles/sass/style.scss'
+import '../styles/style.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { PersistGate } from "redux-persist/integration/react";
@@ -13,9 +14,12 @@ import { Provider } from "react-redux";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// translate
+import { appWithTranslation } from "next-i18next";
+
 function MyApp({ Component, pageProps }) {
   return (
-    
+
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Component {...pageProps} />
@@ -26,4 +30,5 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);
+//export default MyApp
