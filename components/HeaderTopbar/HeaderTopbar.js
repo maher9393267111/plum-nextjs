@@ -28,7 +28,7 @@ const HeaderTopbar = () => {
                                 <li className='lan-sec'>
 
 
-                                {langs?.map((link) => (
+                                {/* {langs?.map((link) => (
                               <Link
                                   key={link.name}
                                    href={pathname}
@@ -47,7 +47,11 @@ const HeaderTopbar = () => {
                                   {link.name}
                               </Link>
                           ))
-                                }
+                                } */}
+
+
+
+
 
 
 
